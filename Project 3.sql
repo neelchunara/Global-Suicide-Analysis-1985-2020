@@ -30,19 +30,8 @@ ALTER TABLE sucide_rate
 SELECT *
 FROM sucide_rate;
 	
-SELECT country
-FROM sucide_rate
-GROUP BY country;
-
-SELECT *
-FROM sucide_rate;
 
 
-SELECT year, COUNT(DISTINCT country) AS num_countries
-FROM sucide_rate
-GROUP BY year
-ORDER BY year;
 
-SELECT *
-FROM sucide_rate;
+
 
