@@ -33,8 +33,49 @@ let layout = {
 // Create the Plotly bar chart
 Plotly.newPlot('plot', data, layout);
 
-//////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////
-////////////////////////// 2nd Graph ///////////////////////////
+
+////2nd Chart - Age Categories and sucide rates from 1985 - 20///// 
+
+// Group data by age category and calculate average suicide rates
+function groupDataByAge(data, ageCategory) {
+    let groupedData = {};
+    data.forEach(entry => {
+        if (!groupedData[entry.year]) {
+            groupedData[entry.year] = entry.sucides_100k_pop;
+        } else {
+            groupedData[entry.year] += entry.sucides_100k_pop;
+        }
+    });
+
+    let years = Object.keys(groupedData);
+    let sumRates = years.map(year => groupedData[year]);
+
+    return { years, sumRates };
+}
+
+// Create an array of traces for different age categories
+let ageTraces = ageCategories.map((ageCategory, index) => {
+    let ageCategoryData = suicide_rates.filter(entry => entry.age === ageCategory);
+    let ageCategoryGroupedData = groupDataByAge(ageCategoryData, ageCategory);
+
+    return {
+        x: ageCategoryGroupedData.years,
+        y: ageCategoryGroupedData.sumRates,
+        mode: 'lines+markers',
+        name: ageCategory,
+        line: { color: colors[index] }
+    };
+});
+
+// Create the Plotly chart
+let layout_ageTrend = {
+    title: 'Suicide Trend Overtime for Different Age Categories',
+    xaxis: { title: 'Year' },
+    yaxis: { title: 'Suicides per 100k Population' },
+};
+
+Plotly.newPlot('agechart', ageTraces, layout_ageTrend);
+
+
 
 
