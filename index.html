@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include links to necessary libraries, like Chart.js or Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Dashboard</title>
+    <!-- Include links to necessary libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha384-dIyRWGN5oxqK1n3Ag2dPxyKb0X0pMuk8Tk1xSFs1R/sM7F5aAHrPU5Es7j8L3uFc" crossorigin="anonymous">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha384-AjziW4gVD4GXWe8l8V+B8RqYB4VQ9qq9x9Bz+5g3hp9UtOFQC4Fw5/Z8DUCFn3MO"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h1>My Dashboard</h1>
+
+    <!-- Container for the world map -->
+    <div id="map-container" class="chart-container"></div>
+
+    <!-- Container for the bar chart -->
+    <div id="bar-chart-container" class="chart-container"></div>
+
+    <!-- Container for other visualizations -->
+    <!-- ... -->
+
+    <!-- Add interactive elements like dropdown menus or buttons -->
+    <!-- ... -->
+    <div class="interactive-controls">
+        <label for="year-select">Select a year:</label>
+        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        <!-- Other options -->
+    </div>
+    <div class="col-md-6">
+        <div id="bar"></div>
+    </div>
+    <!-- ... -->
+    <script src="map.js"></script>
+    <script src="bar.js"></script>
+    <script src="gdp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="chart.js"></script>
+    <!-- <script src="script.js"></script> JavaScript file for interaction -->
+</body>
+
+</html>
+    
+
+
+
+
+    
+    
+    
+    
+    
+    <!-- <div class="interactive-controls">
+        <label for="year-select">Select a year:</label>
+        <select id="year-select">
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            <!-- <option value="2020">2020</option>
+            <option value="2019">2019</option> -->
+            <!-- Other options -->
+        <!-- </select>
+    </div>
+    <div class="col-md-6">
+        <div id="bar"></div>
+    </div> --> -->
+    
