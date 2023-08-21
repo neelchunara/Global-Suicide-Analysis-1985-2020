@@ -34,7 +34,6 @@ _______________________________________________
 
 ### Dashboard
 
-https://github.com/neelchunara/Global-Suicide-Analysis-1985-2020/assets/126720049/2523a521-b8f8-4dd6-8e67-51b0350d16c4
 
 
   
