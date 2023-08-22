@@ -1,6 +1,6 @@
 # Global Suicide Analysis 1985-2020
 Members:     Shengnan Ma, Adora, Margarita Lopez, Neel Chunara 
-
+https://neelchunara.github.io/Global-Suicide-Analysis-1985-2020/
 ## Table Of Contents
 
  * [Introduction](#Introduction)
@@ -38,4 +38,3 @@ _______________________________________________
 
 
 
-  
