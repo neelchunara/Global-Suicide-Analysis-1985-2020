@@ -34,6 +34,7 @@ https://www.kaggle.com/datasets/omkargowda/suicide-rates-overview-1985-to-2021
 _______________________________________________
 
 ### Dashboard
+![Global Suicide Analysis](https://github.com/neelchunara/Global-Suicide-Analysis-1985-2020/assets/126720049/abfdaca8-f986-480b-a720-7e79d286f5ed)
 
 
 
